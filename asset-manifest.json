@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/LibaMigrationServices/static/css/main.fcad101c.css",
-    "main.js": "/LibaMigrationServices/static/js/main.2e6bc892.js",
+    "main.css": "/LibaMigrationServices/static/css/main.bf023015.css",
+    "main.js": "/LibaMigrationServices/static/js/main.36392aa3.js",
     "static/js/453.9013008f.chunk.js": "/LibaMigrationServices/static/js/453.9013008f.chunk.js",
     "index.html": "/LibaMigrationServices/index.html",
-    "main.fcad101c.css.map": "/LibaMigrationServices/static/css/main.fcad101c.css.map",
-    "main.2e6bc892.js.map": "/LibaMigrationServices/static/js/main.2e6bc892.js.map",
+    "main.bf023015.css.map": "/LibaMigrationServices/static/css/main.bf023015.css.map",
+    "main.36392aa3.js.map": "/LibaMigrationServices/static/js/main.36392aa3.js.map",
     "453.9013008f.chunk.js.map": "/LibaMigrationServices/static/js/453.9013008f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fcad101c.css",
-    "static/js/main.2e6bc892.js"
+    "static/css/main.bf023015.css",
+    "static/js/main.36392aa3.js"
   ]
 }
