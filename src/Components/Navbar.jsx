@@ -1,33 +1,65 @@
 import React from "react";
-import "../Styles/Navbar.css"
+import "../Styles/Navbar.css";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
+  function Page() {
+    window.scrollTo(0, 0);
+  }
+
+  function CloseToggle() {
+    const navbarToggler = document.querySelector(".navbar-toggler");
+    if (navbarToggler.offsetParent !== null) {
+      navbarToggler.click();
+    }
+  }
   return (
     <div className="">
       <nav className="navbar navbar-expand-lg bg-body-tertiary py-lg-4 py-md-3 py-2">
+        <button
+          className="navbar-toggler ms-2 px-1 py-0 border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
 
-    <button className="navbar-toggler ms-2 px-1 py-0 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
-      <span className="navbar-toggler-icon"></span>
-    </button>
-    
-    <a className="navbar-brand ms-lg-4 mx-auto mx-lg-4 d-flex align-items-center" href="#">
-      <img src="/libaLogo.png" alt="Liba Migration" height="70" />
-    </a>
-    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul className="navbar-nav gap-1 gap-md-2 gap-lg-3 mb-2 mb-lg-0">
+        <Link
+          className="navbar-brand ms-lg-4 mx-auto mx-lg-4 d-flex align-items-center"
+          to="/"
+        >
+          <img
+            src={process.env.PUBLIC_URL + "/libaLogo.png"}
+            alt="Liba Migration"
+            height="70"
+          />
+        </Link>
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav gap-1 gap-md-2 gap-lg-3 mb-2 mb-lg-0">
             <li className="nav-item linkss">
-              <a
-                className="nav-link text-nowrap fs-5 ms-lg-1 ms-sm-5"  // fix the size of font on mobile and desktop, dont touch mid-level sized font
-                aria-current="page"
-                href="#"
+              <Link
+                onClick={() => {
+                  Page();
+                  CloseToggle();
+                }}
+                className="nav-link text-nowrap fs-5 ms-lg-5"
+                to="/migrate"
               >
                 Migrate
-              </a>
+              </Link>
             </li>
             <li className="nav-item linkss">
-              <a className="nav-link text-nowrap fs-5 ms-lg-1 ms-sm-5" href="#">
+              <Link
+                onClick={() => {
+                  Page();
+                  CloseToggle();
+                }}
+                className="nav-link text-nowrap fs-5 ms-lg-5"
+                to="/work"
+              >
                 Work
-              </a>
+              </Link>
             </li>
             {/* <li className="nav-item dropdown">           // dropdown menu mobile fix
               <a
@@ -60,28 +92,42 @@ export default function Navbar() {
                 </li>
               </ul>
             </li> */}
-            <li className="nav-item text-nowrap fs-5 ms-lg-1 ms-sm-5 linkss">
-              <a className="nav-link" href="#">
+            <li className="nav-item text-nowrap fs-5 ms-lg-5 linkss">
+              <Link 
+              onClick={() => { Page(); CloseToggle(); }}
+              className="nav-link" to="/study">
                 Study
-              </a>
+              </Link>
             </li>
-            <li className="nav-item text-nowrap fs-5 ms-lg-1 ms-sm-5 linkss">
-              <a className="nav-link" href="#">
+            <li className="nav-item text-nowrap fs-5 ms-lg-5 linkss">
+              <Link 
+              onClick={() => {
+                Page();
+                CloseToggle();
+              }}
+              className="nav-link" to="/visa">
                 Visa
-              </a>
+              </Link>
             </li>
-            <li className="nav-item text-nowrap fs-5 ms-lg-1 ms-sm-5 linkss">
-              <a className="nav-link" href="#">
+            <li className="nav-item text-nowrap fs-5 ms-lg-5 linkss">
+              <Link 
+              onClick={() => {
+                Page();
+                CloseToggle();
+              }}
+              className="nav-link" to="/coaching">
                 Coaching
-              </a>
+              </Link>
             </li>
           </ul>
-          <button className="lmbtn text-nowrap mx-2 ms-md-3 mx-lg-5 fs-6 fs-md-5 d-md-inline-block d-none" type="submit" /* Hidden button for phones*/ >
+          <button
+            className="lmbtn text-nowrap mx-2 ms-md-3 mx-lg-5 fs-6 fs-md-5 d-md-inline-block d-none"
+            type="submit" /* Hidden button for phones*/
+          >
             Read More
           </button>
+        </div>
+      </nav>
     </div>
-
-</nav>
-  </div>
   );
 }

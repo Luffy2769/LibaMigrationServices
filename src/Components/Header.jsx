@@ -22,7 +22,7 @@ export default function Header() {
           className="text-dark text-decoration-none phone-hover"
         >
           <span>
-            <FaPhone className="mx-2 mx-lg-1" />
+            <FaPhone className="mx-2 mx-lg-1 ms-3" />
             <span className="d-none d-lg-inline">+91 8850285886</span>
           </span>
         </a>
@@ -31,6 +31,7 @@ export default function Header() {
           href="https://maps.app.goo.gl/NnhiQP1diAiy6VBX7?g_st=ic"
           className="text-dark text-decoration-none location-hover"
           target="_blank"
+          rel="noreferrer"
         >
           <span>
             <FaMapMarkerAlt className="mx-2 mx-lg-1" />
@@ -54,6 +55,7 @@ export default function Header() {
         <a
           href="https://www.facebook.com/libamigration?mibextid=wwXIfr&mibextid=wwXIfr"
           target="_blank"
+          rel="noreferrer"
           className="text-dark d-flex gap-1 gap-md-2 gap-lg-3 me-2 me-lg-3 mt-1"
         >
           <FaFacebookF className="" />
@@ -61,24 +63,21 @@ export default function Header() {
         <a
           href="https://www.instagram.com/liba_migration?igsh=eDRkdXR3NWozZTdr"
           target="_blank"
+          rel="noreferrer"
           className="text-dark d-flex gap-1 gap-md-2 gap-lg-3 me-2 me-lg-3 mt-1"
         >
           <FaInstagram className="" />
         </a>
-        <a
-          href="#"
-          target="_blank"
-          className="text-dark d-flex gap-1 gap-md-2 gap-lg-3 me-2 me-lg-3 mt-1"
+        <button
+          className="text-dark d-flex gap-1 gap-md-2 gap-lg-3 me-2 me-lg-3 mt-1 border-0 bg-transparent"
         >
           <FaTwitter className="" />
-        </a>
-        <a
-          href="#"
-          target="_blank"
-          className="text-dark d-flex gap-1 gap-md-2 gap-lg-3 me-2 me-lg-3 mt-1"
+        </button>
+        <button
+          className="text-dark d-flex gap-1 gap-md-2 gap-lg-3 me-2 me-lg-3 mt-1 border-0 bg-transparent"
         >
           <FaYoutube className="" />
-        </a>
+        </button>
       </div>
     </div>
   );

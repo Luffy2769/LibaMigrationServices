@@ -1,5 +1,6 @@
 import React from "react";
 import "../Styles/Home.css";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
@@ -17,40 +18,40 @@ export default function Home() {
               <div className="row g-3 mb-4">
                 <div className="col-12 col-lg-6">
                   <div className="card px-3 py-4 h-100">
-                    <h5 className="svt">Second</h5>
-                    <div className="d-grid">
+                    <h5 className="svt">What can we do for you?</h5>
+                    <div className="buttonss">
                       <button className="first">
-                        <a href="/study" className="nav-link fs-5">
+                        <Link to="/study" className="nav-link fs-5">
                           Study
-                        </a>
+                        </Link>
                       </button>
                       <button className="second">
-                        <a href="/migrate" className="nav-link fs-5">
+                        <Link to="/migrate" className="nav-link fs-5">
                           Migrate
-                        </a>
+                        </Link>
                       </button>
                       <button className="third">
-                        <a href="/work" className="nav-link fs-5">
+                        <Link to="/work" className="nav-link fs-5">
                           Work
-                        </a>
+                        </Link>
                       </button>
                       <button className="fourth">
-                        <a href="/visit" className="nav-link fs-5">
+                        <Link to="/visit" className="nav-link fs-5">
                           Visit
-                        </a>
+                        </Link>
                       </button>
                     </div>
                   </div>
                 </div>
                 <div className="col-12 col-lg-6">
                   <div className="card px-3 py-4 h-100 d-flex flex-column">
-                    <h5 className="svt mb-3">What can we do for you?</h5>
+                    <h5 className="svt mb-3">Visa Services</h5>
                     <p>
-                      <ul>
-                        <li className="sv p-2 rounded bg-light">Work Visa</li>
-                        <li className="sv p-2 rounded bg-light">Study Visa</li>
-                        <li className="sv p-2 rounded bg-light">PR Visa</li>
-                        <li className="sv p-2 rounded bg-light">Business Visa</li>
+                      <ul className="seccardtarget">
+                        <li className="sv p-2 rounded bg-white">Work Visa</li>
+                        <li className="sv p-2 rounded bg-white">Study Visa</li>
+                        <li className="sv p-2 rounded bg-white">PR Visa</li>
+                        <li className="sv p-2 rounded bg-white">Business Visa</li>
                       </ul>
                     </p>
                   </div>
@@ -62,6 +63,13 @@ export default function Home() {
               </button>
             </div>
             <div className="col-lg-5">
+              <div className="hero-image-container">
+                {/* <img 
+                  src={process.env.PUBLIC_URL + "/s1.jpg"} 
+                  alt="Global Migration Services" 
+                  className="hero-image img-fluid rounded shadow"
+                /> */}
+              </div>
               <div className="form-box p-4 bg-white rounded shadow mt-4">
                 <h3 className="mb-3">Quick Inquiry</h3>
                 <form
