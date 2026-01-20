@@ -4,9 +4,10 @@
 
 /* Reset for p tag and ul tag */
 
-ul, p{
-    margin: 0;
-    padding-left: 20;
+ul,
+p {
+  margin: 0;
+  padding-left: 0;
 }
 
 body {
@@ -29,14 +30,17 @@ body {
   text-align: center;
 }
 
+.hero .col-lg-7 {
+  margin-top: 20px;
+}
+
 .hero h1 {
   font-size: 42px;
   margin-bottom: 15px;
 }
 
 .hero p {
-  font-size: 18px;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   max-width: 700px;
   margin-inline: auto;
 }
@@ -47,6 +51,7 @@ body {
 }
 
 .hero-image {
+  margin-top: 12px;
   width: 100%;
   height: 300px;
   object-fit: cover;
@@ -68,10 +73,11 @@ body {
 
 /* Card mat css */
 
-.sv{
-    text-align: left;
-    font-size: 24px;
-    color: #000000;
+.sv {
+  text-align: left;
+  list-style: none;
+  font-size: 24px;
+  color: #000000;
 }
 
 @media (max-width: 768px) {
@@ -86,30 +92,44 @@ body {
   }
 }
 
-.svt{
-    font-weight: 500;
+.svtwo {
+  text-align: center;
+  margin-top: 12px;
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .svtwo {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 992px) {
+  .svtwo {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 768px) {
   .svt {
-    font-size: 20px;
+    font-size: 22px;
   }
 }
 
 @media (min-width: 992px) {
   .svt {
-    font-size: 28px;
+    font-size: 30px;
   }
 }
 
 /* FORM */
 
-.formElement{
-    box-shadow: none !important;
+.formElement {
+  box-shadow: none !important;
 }
 
 /* BUTTON */
-.primary-btn {
+/* .primary-btn {
   background: #ff6b00;
   color: #fff;
   padding: 14px 28px;
@@ -117,7 +137,7 @@ body {
   border-radius: 6px;
   font-size: 16px;
   cursor: pointer;
-}
+} */
 
 /* SECTIONS */
 .section {
@@ -144,60 +164,124 @@ body {
   background: #fff;
 }
 
-.buttonss{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+.buttonss {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 15px;
 }
 
-.seccardtarget{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+/* Service buttons */
+.first,
+.second,
+.third,
+.fourth {
+  border: none;
+  border-radius: 10px;
+  padding: 12px 16px;
+  margin: 0;
+  font-weight: 500;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Buttons inside the card */
-
-.first{
-  border: 1px solid rgb(59, 230, 59);
-  border-radius: 12px;
-  box-shadow: 2px 3px;
-  padding: 10px 8px;
-  margin: 10px;
-  background-color: #28ff33;
+.first {
+  background: linear-gradient(135deg, #28a745, #20c997);
   color: white;
 }
 
-.second{
-  border: 1px solid red;
-  border-radius: 12px;
-  box-sizing: 2px 3px;
-  padding: 10px 8px;
-  margin: 10px;
-  background-color: #ff5733;
+.first:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(40, 167, 69, 0.3);
+}
+
+.second {
+  background: linear-gradient(135deg, #dc3545, #e74c3c);
   color: white;
 }
 
-.third{
-  border: 1px solid grey;
-  border-radius: 12px;
-  box-shadow: 2px 3px;
-  padding: 10px 8px;
-  margin: 10px;
-  background-color: grey;
+.second:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(220, 53, 69, 0.3);
+}
+
+.third {
+  background: linear-gradient(135deg, #6c757d, #495057);
   color: white;
 }
 
-.fourth{
-  border: 1px solid yellow;
-  border-radius: 12px;
-  box-shadow: 2px 3px;
-  padding: 10px 8px;
-  margin: 10px;
-  background-color: rgb(222, 255, 77);
-  color: white;
+.third:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(108, 117, 125, 0.3);
 }
 
+.fourth {
+  background: linear-gradient(135deg, #ffc107, #ffb300);
+  color: #212529;
+}
+
+.fourth:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 193, 7, 0.3);
+}
+
+.first .nav-link,
+.second .nav-link,
+.third .nav-link,
+.fourth .nav-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Visa Services Grid */
+.visa-services-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.visa-service-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  border: 1px solid #e9ecef;
+  min-width: 0;
+}
+
+.visa-service-item:hover {
+  background: #e8f4f3;
+  border-color: #36948c;
+  transform: translateY(-2px);
+}
+
+.visa-icon {
+  font-size: 1.2rem;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  color: #36948c;
+}
+
+.visa-service-item span {
+  font-weight: 500;
+  color: #1d4e50;
+  font-size: 0.95rem;
+  flex: 1;
+  min-width: 0;
+}
 
 /* STEPS */
 .steps {
@@ -230,34 +314,300 @@ body {
 
 /* None yet */
 
+/* STATISTICS SECTION */
+.stats-section {
+  background: linear-gradient(135deg, #1d4e50 0%, #36948c 100%);
+  padding: 60px 0;
+  color: white;
+}
 
-/* RESPONSIVE BREAKPOINTS */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+  text-align: center;
+}
 
+.stat-item {
+  padding: 20px;
+}
+
+.stat-number {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.stat-label {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin: 0;
+}
+
+/* DESTINATIONS */
+.destinations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.destination-card {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.destination-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.destination-flag {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.destination-card h3 {
+  color: #1d4e50;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.destination-card > p {
+  color: #666;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.destination-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.destination-features li {
+  padding: 8px 0;
+  color: #555;
+  border-bottom: 1px solid #eee;
+}
+
+.destination-features li:last-child {
+  border-bottom: none;
+}
+
+.destination-features li:before {
+  content: "✓";
+  color: #36948c;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+/* WHY CHOOSE US - ENHANCED */
+.why-choose-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.feature-card {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-3px);
+}
+
+.feature-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.feature-card h3 {
+  color: #1d4e50;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.feature-card p {
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* TESTIMONIALS */
+.testimonials-section {
+  background: #f8f9fa;
+  padding: 80px 0;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.testimonial-card {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.testimonial-card:before {
+  content: '"';
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  font-size: 4rem;
+  color: #36948c;
+  opacity: 0.3;
+}
+
+.testimonial-content p {
+  font-style: italic;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 25px;
+  font-size: 1.1rem;
+}
+
+.testimonial-author {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+}
+
+.author-info h4 {
+  margin: 0;
+  color: #1d4e50;
+  font-size: 1.1rem;
+}
+
+.author-info span {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.rating {
+  font-size: 1.2rem;
+}
+
+/* PROCESS STEPS */
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.process-step {
+  text-align: center;
+  padding: 30px 20px;
+  position: relative;
+}
+
+.step-number {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #1d4e50, #36948c);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0 auto 20px;
+}
+
+.process-step h3 {
+  color: #1d4e50;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.process-step p {
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* RESPONSIVE ENHANCEMENTS */
 @media (max-width: 768px) {
-  .hero h1 {
-    font-size: 32px;
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
   }
 
-  .hero p {
-    font-size: 16px;
+  .stat-number {
+    font-size: 2.5rem;
   }
 
-  .section {
-    padding: 50px 0;
+  .destinations-grid,
+  .why-choose-grid,
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .process-steps {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 480px) {
-  .hero {
+  .stats-grid,
+  .process-steps {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonials-section {
     padding: 60px 0;
   }
+}
 
-  .hero h1 {
-    font-size: 26px;
+/* IMAGE FIX FOR PHONES cuz it wasnt looking good below, putting at 1st order after heading and subheading */
+
+@media (min-width: 992px) {
+  .showOnPhone {
+    display: none;
   }
+}
 
-  .primary-btn {
-    width: 100%;
-    max-width: 300px;
+@media (max-width: 992px) {
+  .showOnPHone {
+    display: inline;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .delOnPhone {
+    display: none;
+  }
+}
+
+/* Visa services card outflow fix on tablet screens and minimized pc windows */
+
+@media (max-width: 1200px) and (min-width: 768px) {
+  .visa-service-item {
+    padding: none !important;
+    gap: 2px !important;
   }
 }

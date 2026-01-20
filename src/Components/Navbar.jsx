@@ -93,29 +93,38 @@ export default function Navbar() {
               </ul>
             </li> */}
             <li className="nav-item text-nowrap fs-5 ms-lg-5 linkss">
-              <Link 
-              onClick={() => { Page(); CloseToggle(); }}
-              className="nav-link" to="/study">
+              <Link
+                onClick={() => {
+                  Page();
+                  CloseToggle();
+                }}
+                className="nav-link"
+                to="/study"
+              >
                 Study
               </Link>
             </li>
             <li className="nav-item text-nowrap fs-5 ms-lg-5 linkss">
-              <Link 
-              onClick={() => {
-                Page();
-                CloseToggle();
-              }}
-              className="nav-link" to="/visa">
+              <Link
+                onClick={() => {
+                  Page();
+                  CloseToggle();
+                }}
+                className="nav-link"
+                to="/visa"
+              >
                 Visa
               </Link>
             </li>
             <li className="nav-item text-nowrap fs-5 ms-lg-5 linkss">
-              <Link 
-              onClick={() => {
-                Page();
-                CloseToggle();
-              }}
-              className="nav-link" to="/coaching">
+              <Link
+                onClick={() => {
+                  Page();
+                  CloseToggle();
+                }}
+                className="nav-link"
+                to="/coaching"
+              >
                 Coaching
               </Link>
             </li>

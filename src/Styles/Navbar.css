@@ -13,12 +13,12 @@
 
 /* Hamburger shadow removing css */
 .navbar-toggler {
-    border: none !important;
-    box-shadow: none !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
 .navbar-toggler:focus {
-    box-shadow: none !important;
+  box-shadow: none !important;
 }
 
 /* Hamburger css ends */
@@ -26,10 +26,10 @@
 /* Pages names css starts */
 
 .linkss {
-    font-size: 16px;
-    font-weight: 500;
-    color: #002147 !important;
-    transition: color 0.3s ease;
+  font-size: 16px;
+  font-weight: 500;
+  color: #002147 !important;
+  transition: color 0.3s ease;
 }
 
 /* @media (max-width: 991px) {
@@ -46,7 +46,7 @@
 } */
 
 @media (max-width: 991px) {
-  .linkss{
-    margin-left: 24px
+  .linkss {
+    margin-left: 24px;
   }
 }

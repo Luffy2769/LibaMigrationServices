@@ -3,13 +3,13 @@ import "../Styles/Migrate.css";
 export default function Migrate() {
   return (
     <div className="migrate-page">
-
       {/* HERO + FORM */}
       <section className="migrate-hero">
         <div className="container">
           <h1>Immigrate & Build Your Global Future</h1>
           <p>
-            Discover the best migration route for you and your family with tailored support every step of the way.
+            Discover the best migration route for you and your family with
+            tailored support every step of the way.
           </p>
 
           {/* form */}
@@ -23,10 +23,12 @@ export default function Migrate() {
               <option>Germany</option>
             </select>
 
-            <input type="text" placeholder="Your Email" required/>
-            <input type="text" placeholder="Whatsapp / Phone" required/>
+            <input type="text" placeholder="Your Email" required />
+            <input type="text" placeholder="Whatsapp / Phone" required />
 
-            <button type="submit" className="lmbtn">Get Free Consultation</button>
+            <button type="submit" className="lmbtn">
+              Get Free Consultation
+            </button>
           </form>
         </div>
       </section>
@@ -101,7 +103,6 @@ export default function Migrate() {
           <button className="btn-primary">Get Free Assessment</button>
         </div>
       </section>
-
     </div>
   );
-};
+}

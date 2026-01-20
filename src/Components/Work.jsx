@@ -1,9 +1,8 @@
 import "../Styles/Work.css";
 
-export default function Work (){
+export default function Work() {
   return (
     <div className="work-page">
-
       {/* HERO */}
       <section className="work-hero">
         <div className="container">
@@ -20,11 +19,11 @@ export default function Work (){
         <div className="container">
           <h2>What is a Work Visa?</h2>
           <p>
-            A work visa allows you to legally work in a foreign country for
-            a specified period. It’s usually tied to a job offer and
-            employer sponsorship, and is essential before you start work
-            abroad. Our team helps you identify the right visa type and
-            supports your application from start to finish.
+            A work visa allows you to legally work in a foreign country for a
+            specified period. It’s usually tied to a job offer and employer
+            sponsorship, and is essential before you start work abroad. Our team
+            helps you identify the right visa type and supports your application
+            from start to finish.
           </p>
         </div>
       </section>
@@ -52,16 +51,16 @@ export default function Work (){
             <div className="card">
               <h3>Canada Work Visa</h3>
               <p>
-                Apply for a Canadian work permit with a confirmed job offer.
-                We help with LMIA, documentation, and submission support.
+                Apply for a Canadian work permit with a confirmed job offer. We
+                help with LMIA, documentation, and submission support.
               </p>
             </div>
 
             <div className="card">
               <h3>Australia Work Visa</h3>
               <p>
-                Temporary or permanent work visas with employer sponsorship.
-                We guide through nomination and eligibility checks.
+                Temporary or permanent work visas with employer sponsorship. We
+                guide through nomination and eligibility checks.
               </p>
             </div>
 
@@ -107,7 +106,6 @@ export default function Work (){
           </button>
         </div>
       </section>
-
     </div>
   );
-};
+}

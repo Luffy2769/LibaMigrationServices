@@ -68,14 +68,10 @@ export default function Header() {
         >
           <FaInstagram className="" />
         </a>
-        <button
-          className="text-dark d-flex gap-1 gap-md-2 gap-lg-3 me-2 me-lg-3 mt-1 border-0 bg-transparent"
-        >
+        <button className="text-dark d-flex gap-1 gap-md-2 gap-lg-3 me-2 me-lg-3 mt-1 border-0 bg-transparent">
           <FaTwitter className="" />
         </button>
-        <button
-          className="text-dark d-flex gap-1 gap-md-2 gap-lg-3 me-2 me-lg-3 mt-1 border-0 bg-transparent"
-        >
+        <button className="text-dark d-flex gap-1 gap-md-2 gap-lg-3 me-2 me-lg-3 mt-1 border-0 bg-transparent">
           <FaYoutube className="" />
         </button>
       </div>

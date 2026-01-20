@@ -3,19 +3,16 @@ import "../Styles/Visa.css";
 export default function Visa() {
   return (
     <div className="visa-page">
-
       {/* HERO */}
       <section className="visa-hero">
         <div className="container">
           <h1>Visa Services for Every Purpose</h1>
           <p>
-            Whether you plan to study, work, visit, or settle abroad —
-            Liba Migration offers complete visa guidance with expert support.
+            Whether you plan to study, work, visit, or settle abroad — Liba
+            Migration offers complete visa guidance with expert support.
           </p>
 
-          <button className="lmbtn">
-            Get Free Visa Consultation
-          </button>
+          <button className="lmbtn">Get Free Visa Consultation</button>
         </div>
       </section>
 
@@ -52,8 +49,8 @@ export default function Visa() {
             <div className="card">
               <h3>Permanent Residency</h3>
               <p>
-                Long-term settlement options including skilled migration and
-                PR pathways.
+                Long-term settlement options including skilled migration and PR
+                pathways.
               </p>
             </div>
 
@@ -67,9 +64,7 @@ export default function Visa() {
 
             <div className="card">
               <h3>Dependent Visa</h3>
-              <p>
-                Visa support for spouses, children, and family members.
-              </p>
+              <p>Visa support for spouses, children, and family members.</p>
             </div>
           </div>
         </div>
@@ -109,12 +104,9 @@ export default function Visa() {
       <section className="visa-cta">
         <div className="container">
           <h2>Need Help Choosing the Right Visa?</h2>
-          <button className="primary-btn">
-            Talk to Our Visa Experts
-          </button>
+          <button className="primary-btn">Talk to Our Visa Experts</button>
         </div>
       </section>
-
     </div>
   );
 }

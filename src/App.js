@@ -22,7 +22,7 @@ function App() {
       <div className="App">
         <header className="App-header sticky-top">
           <Header />
-        <Navbar />
+          <Navbar />
         </header>
         <Routes>
           <Route path="/" element={<Home />} />
