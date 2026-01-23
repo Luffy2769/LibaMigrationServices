@@ -104,7 +104,7 @@ export default function Visa() {
       <section className="visa-cta">
         <div className="container">
           <h2>Need Help Choosing the Right Visa?</h2>
-          <button className="primary-btn">Talk to Our Visa Experts</button>
+          <button className="lmbtn">Talk to Our Visa Experts</button>
         </div>
       </section>
     </div>

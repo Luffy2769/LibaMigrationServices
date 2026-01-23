@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   FaClipboardCheck,
   FaUserTie,
@@ -12,6 +12,39 @@ import "../Styles/Home.css";
 import { Link } from "react-router-dom";
 
 export default function Home() {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    service: ''
+  });
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await fetch('http://localhost:8000/api/submit/', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData)
+      });
+      const result = await response.json();
+      if (result.status === 'success') {
+        alert('Form submitted successfully!');
+        setFormData({ name: '', email: '', phone: '', service: '' });
+      }
+    } catch (error) {
+      alert('Error submitting form');
+    }
+  };
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
   return (
     <>
       {/* HERO SECTION */}
@@ -147,43 +180,46 @@ export default function Home() {
               </div>
               <div className="form-box p-4 bg-white rounded shadow mt-4">
                 <h3 className="mb-3">Quick Inquiry</h3>
-                <form
-                  action={"https://formspree.io/f/myzpbaqk"}
-                  method="POST"
-                  target="_blank"
-                >
+                <form onSubmit={handleSubmit}>
                   <input
                     type="text"
                     className="form-control mb-3 formElement"
-                    name="Name"
+                    name="name"
                     placeholder="Full Name"
+                    value={formData.name}
+                    onChange={handleChange}
                     required
                   />
                   <input
                     type="email"
                     className="form-control mb-3 formElement"
-                    name="Email"
+                    name="email"
                     placeholder="Email"
+                    value={formData.email}
+                    onChange={handleChange}
                     required
                   />
                   <input
                     type="tel"
                     className="form-control mb-3 formElement"
-                    name="Phone"
+                    name="phone"
                     placeholder="Phone"
+                    value={formData.phone}
+                    onChange={handleChange}
                     required
                   />
                   <select
-                    type="text"
                     className="form-select mb-3 formElement"
-                    name="Services"
+                    name="service"
+                    value={formData.service}
+                    onChange={handleChange}
                     required
                   >
                     <option value="">Select Service</option>
-                    <option>Immigration</option>
-                    <option>Work abroad</option>
-                    <option>Study Overseas</option>
-                    <option>Visa services</option>
+                    <option value="Immigration">Immigration</option>
+                    <option value="Work abroad">Work abroad</option>
+                    <option value="Study Overseas">Study Overseas</option>
+                    <option value="Visa services">Visa services</option>
                   </select>
                   <button type="submit" className="lmbtn w-100">
                     Submit
