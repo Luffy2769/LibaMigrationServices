@@ -167,7 +167,9 @@ export default function Home() {
               {/* Cards end here */}
 
               <button className="primary-btn lmbtn">
+                <Link to="/consultationForm" className="cButton">
                 Get Free Consultation
+                </Link>
               </button>
             </div>
             <div className="col-lg-5">

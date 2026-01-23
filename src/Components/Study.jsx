@@ -1,6 +1,6 @@
 import "../Styles/Study.css";
 import { FaGraduationCap, FaGlobe, FaBriefcase, FaUsers, FaBookOpen, FaFileAlt, FaHandshake, FaPlane } from 'react-icons/fa';
-
+import { Link } from "react-router-dom";
 export default function Study() {
   return (
     <div className="study-page">
@@ -29,8 +29,10 @@ export default function Study() {
                   <span className="stat-label">Visa Success Rate</span>
                 </div>
               </div>
-              <button className="lmbtn hero-btn">
+              <button className="lmbtn cta-primary">
+                            <Link to="/consultationForm" className="cButton">
                 Get Free Study Consultation
+                </Link>
               </button>
             </div>
             <div className="hero-image">
@@ -353,7 +355,9 @@ export default function Study() {
             <p>Join thousands of successful students who have achieved their dreams with our expert guidance.</p>
             <div className="cta-buttons">
               <button className="lmbtn cta-primary">
+                            <Link to="/consultationForm" className="cButton">
                 Book Free Consultation
+                </Link>
               </button>
               <button className="lmbtn-outline cta-secondary">
                 Download Study Guide

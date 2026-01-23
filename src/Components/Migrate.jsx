@@ -1,5 +1,5 @@
 import "../Styles/Migrate.css";
-
+import { Link } from "react-router-dom";
 export default function Migrate() {
   return (
     <div className="migrate-page">
@@ -100,7 +100,11 @@ export default function Migrate() {
       <section className="cta-section">
         <div className="container">
           <h2>Ready to Start Your Migration Journey?</h2>
-          <button className="btn-primary">Get Free Assessment</button>
+          <button className="btn-primary">
+            <Link to="/consultationForm" className="cButton">
+            Get Free Assessment
+            </Link>
+            </button>
         </div>
       </section>
     </div>

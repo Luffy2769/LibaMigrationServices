@@ -1,4 +1,5 @@
 import "../Styles/Work.css";
+import { Link } from "react-router-dom";
 
 export default function Work() {
   return (
@@ -102,7 +103,9 @@ export default function Work() {
         <div className="container">
           <h2>Ready to Work Abroad?</h2>
           <button className="btn-primary">
+                        <Link to="/consultationForm" className="cButton">
             Get a Free Work Visa Consultation
+            </Link>
           </button>
         </div>
       </section>

@@ -1,4 +1,5 @@
 import "../Styles/Visa.css";
+import { Link } from "react-router-dom";
 
 export default function Visa() {
   return (
@@ -12,7 +13,11 @@ export default function Visa() {
             Migration offers complete visa guidance with expert support.
           </p>
 
-          <button className="lmbtn">Get Free Visa Consultation</button>
+          <button className="lmbtn">
+            <Link to="/consultationForm" className="cButton">
+            Get Free Visa Consultation
+            </Link>
+            </button>
         </div>
       </section>
 
@@ -104,7 +109,11 @@ export default function Visa() {
       <section className="visa-cta">
         <div className="container">
           <h2>Need Help Choosing the Right Visa?</h2>
-          <button className="lmbtn">Talk to Our Visa Experts</button>
+          <button className="lmbtn">
+            <Link to="/consultationForm" className="cButton">
+            Talk to Our Visa Experts
+            </Link>
+            </button>
         </div>
       </section>
     </div>
