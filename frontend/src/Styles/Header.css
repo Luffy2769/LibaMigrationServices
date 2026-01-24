@@ -1,0 +1,14 @@
+.email-hover:hover {
+  color: #ffeb3b !important;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+.phone-hover:hover,
+.location-hover:hover,
+.email-hover:hover {
+  color: #ffd700 !important;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}

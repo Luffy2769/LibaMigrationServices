@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* CONTAINER */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* HERO */
+.visa-hero {
+  background: #f5f7fa;
+  padding: 70px 0;
+  text-align: center;
+}
+
+.visa-hero h1 {
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+
+.visa-hero p {
+  font-size: 16px;
+  max-width: 720px;
+  margin: 0 auto 25px;
+}
+
+/* BUTTONS */
+
+/* None in particular */
+
+/* SECTIONS */
+.section {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.light-bg {
+  background: #f5f7fa;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* CARDS */
+.card {
+  background: white;
+  padding: 22px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+}
+
+/* BOX */
+.box {
+  background: #eef2f7;
+  padding: 18px;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+/* STEPS */
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.step {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+/* CTA */
+.visa-cta {
+  background: #002147;
+  color: white;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.visa-cta h2 {
+  margin-bottom: 20px;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  .visa-hero h1 {
+    font-size: 38px;
+  }
+
+  .section h2 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .primary-btn {
+    width: 100%;
+    max-width: 320px;
+  }
+}
