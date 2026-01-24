@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/LibaMigrationServices/static/css/main.dcdf06dd.css",
-    "main.js": "/LibaMigrationServices/static/js/main.c00666fc.js",
-    "static/js/453.9013008f.chunk.js": "/LibaMigrationServices/static/js/453.9013008f.chunk.js",
-    "index.html": "/LibaMigrationServices/index.html",
-    "main.dcdf06dd.css.map": "/LibaMigrationServices/static/css/main.dcdf06dd.css.map",
-    "main.c00666fc.js.map": "/LibaMigrationServices/static/js/main.c00666fc.js.map",
-    "453.9013008f.chunk.js.map": "/LibaMigrationServices/static/js/453.9013008f.chunk.js.map"
+    "main.css": "/VidyaEducationAbroad/static/css/main.dcdf06dd.css",
+    "main.js": "/VidyaEducationAbroad/static/js/main.538dd1fc.js",
+    "static/js/453.a1668781.chunk.js": "/VidyaEducationAbroad/static/js/453.a1668781.chunk.js",
+    "index.html": "/VidyaEducationAbroad/index.html",
+    "main.dcdf06dd.css.map": "/VidyaEducationAbroad/static/css/main.dcdf06dd.css.map",
+    "main.538dd1fc.js.map": "/VidyaEducationAbroad/static/js/main.538dd1fc.js.map",
+    "453.a1668781.chunk.js.map": "/VidyaEducationAbroad/static/js/453.a1668781.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dcdf06dd.css",
-    "static/js/main.c00666fc.js"
+    "static/js/main.538dd1fc.js"
   ]
 }
