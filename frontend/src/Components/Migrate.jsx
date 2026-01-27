@@ -1,6 +1,44 @@
 import "../Styles/Migrate.css";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 export default function Migrate() {
+  const [formData, setFormData] = useState({
+    country: "",
+    email: "",
+    phone: "",
+  });
+
+  const quickForm = async (e) => {
+    e.preventDefault();
+    // Handle form submission
+    try {
+      const response = await fetch("http://localhost:8000/api/quickForm/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+      const result = await response.json();
+      if (result.status === "success") {
+        alert("Form submitted successfully!");
+        setFormData({
+          country: "",
+          email: "",
+          phone: "",
+        });
+      }
+    } catch (error) {
+      alert("Error submitting form");
+    }
+  };
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
   return (
     <div className="migrate-page">
       {/* HERO + FORM */}
@@ -13,8 +51,10 @@ export default function Migrate() {
           </p>
 
           {/* form */}
-          <form className="migrate-form">
-            <select>
+          <form className="migrate-form" onSubmit={quickForm}>
+            <select value={formData.country}
+            name="country" 
+             onChange={handleChange}>
               <option>Select Country to Migrate</option>
               <option>Canada</option>
               <option>Australia</option>
@@ -23,8 +63,22 @@ export default function Migrate() {
               <option>Germany</option>
             </select>
 
-            <input type="text" placeholder="Your Email" required />
-            <input type="text" placeholder="Whatsapp / Phone" required />
+            <input
+              type="text"
+              name="email"
+              placeholder="Your Email"
+              value={formData.email}
+              onChange={handleChange}
+              required
+            />
+            <input
+              type="text"
+              name="phone"
+              placeholder="Whatsapp / Phone"
+              value={formData.phone}
+              onChange={handleChange}
+              required
+            />
 
             <button type="submit" className="lmbtn">
               Get Free Consultation
@@ -102,9 +156,9 @@ export default function Migrate() {
           <h2>Ready to Start Your Migration Journey?</h2>
           <button className="btn-primary">
             <Link to="/consultationForm" className="cButton">
-            Get Free Assessment
+              Get Free Assessment
             </Link>
-            </button>
+          </button>
         </div>
       </section>
     </div>

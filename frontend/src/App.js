@@ -30,7 +30,7 @@ function ScrollToTop() {
 
 function App() {
   return (
-    <Router basename="/LibaMigrationServices">
+    <Router basename="/VidyaEducationAbroad">
       <div className="App">
         <ScrollToTop />
         <header className="App-header sticky-top">
