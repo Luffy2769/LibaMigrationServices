@@ -1,5 +1,6 @@
 import React from "react";
-import {
+import { Link } from "react-router-dom";
+import { 
   FaPhone,
   FaEnvelope,
   FaMapMarkerAlt,
@@ -32,7 +33,7 @@ export default function Footer() {
               guidance and personalized support.
             </p>
             <div className="social-links">
-              <a href="#" className="social-link">
+              <a href="https://www.facebook.com/libamigration?mibextid=wwXIfr&mibextid=wwXIfr" className="social-link">
                 <FaFacebook />
               </a>
               <a href="#" className="social-link">
@@ -41,7 +42,7 @@ export default function Footer() {
               <a href="#" className="social-link">
                 <FaLinkedin />
               </a>
-              <a href="#" className="social-link">
+              <a href="https://www.instagram.com/liba_migration?igsh=eDRkdXR3NWozZTdr" className="social-link">
                 <FaInstagram />
               </a>
             </div>
@@ -52,19 +53,19 @@ export default function Footer() {
             <h4>Our Services</h4>
             <ul className="footer-links">
               <li>
-                <a href="/study">Study Abroad</a>
+                <Link to="/study">Study Abroad</Link>
               </li>
               <li>
-                <a href="/migrate">Immigration Services</a>
+                <Link to="/migrate">Immigration Services</Link>
               </li>
               <li>
-                <a href="/work">Work Visas</a>
+                <Link to="/work">Work Visas</Link>
               </li>
               <li>
-                <a href="/visa">Visa Consultation</a>
+                <Link to="/visa">Visa Consultation</Link>
               </li>
               <li>
-                <a href="/coaching">IELTS Coaching</a>
+                <Link to="/coaching">IELTS Coaching</Link>
               </li>
             </ul>
           </div>
