@@ -30,7 +30,9 @@ export default function Navbar() {
           to="/"
         >
           <img
-            style={{borderRadius: '12px'}}
+          className="logo"
+            style={{ borderRadius: "12px",
+             }}
             src={process.env.PUBLIC_URL + "/Logo.png"}
             alt="Vidya Education Abroad"
             height="70"
@@ -134,7 +136,15 @@ export default function Navbar() {
             className="lmbtn text-nowrap mx-2 ms-md-3 mx-lg-5 fs-6 fs-md-5 d-md-inline-block d-none"
             type="submit" /* Hidden button for phones*/
           >
-            Read More
+            <Link
+              onClick={() => {
+                Page();
+                CloseToggle();
+              }}
+              className="nav-link"
+              to="/visit">
+              Read More
+            </Link>
           </button>
         </div>
       </nav>

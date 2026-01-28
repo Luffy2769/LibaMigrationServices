@@ -222,7 +222,7 @@ body {
 
 .fourth {
   background: linear-gradient(135deg, #ffc107, #ffb300);
-  color: #212529;
+  color: white;
 }
 
 .fourth:hover {

@@ -50,3 +50,10 @@
     margin-left: 24px;
   }
 }
+
+.logo{
+  border-radius: 12px;
+  mix-blend-mode: multiply;
+  padding: 0px !important;
+  margin: 0px !important;
+}
