@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/VidyaEducationAbroad/static/css/main.eb46bdea.css",
-    "main.js": "/VidyaEducationAbroad/static/js/main.b2223be2.js",
+    "main.css": "/VidyaEducationAbroad/static/css/main.bbc72f26.css",
+    "main.js": "/VidyaEducationAbroad/static/js/main.fd3d1d1f.js",
     "static/js/453.a1668781.chunk.js": "/VidyaEducationAbroad/static/js/453.a1668781.chunk.js",
     "index.html": "/VidyaEducationAbroad/index.html",
-    "main.eb46bdea.css.map": "/VidyaEducationAbroad/static/css/main.eb46bdea.css.map",
-    "main.b2223be2.js.map": "/VidyaEducationAbroad/static/js/main.b2223be2.js.map",
+    "main.bbc72f26.css.map": "/VidyaEducationAbroad/static/css/main.bbc72f26.css.map",
+    "main.fd3d1d1f.js.map": "/VidyaEducationAbroad/static/js/main.fd3d1d1f.js.map",
     "453.a1668781.chunk.js.map": "/VidyaEducationAbroad/static/js/453.a1668781.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.eb46bdea.css",
-    "static/js/main.b2223be2.js"
+    "static/css/main.bbc72f26.css",
+    "static/js/main.fd3d1d1f.js"
   ]
 }
