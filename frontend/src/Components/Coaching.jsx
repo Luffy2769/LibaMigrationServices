@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaGraduationCap, FaBookOpen, FaUsers, FaClock, FaTrophy, FaChartLine } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 import '../Styles/Coaching.css';
 
 export default function Coaching() {
@@ -69,7 +70,7 @@ export default function Coaching() {
               </ul>
               <div className="program-duration">Duration: 4-12 weeks</div>
             </div>
-
+ 
             <div className="program-card">
               <div className="program-icon">
                 <FaUsers />
@@ -99,6 +100,222 @@ export default function Coaching() {
               </ul>
               <div className="program-duration">Duration: As needed</div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* COACHING SCHEDULE */}
+      <section className="coaching-schedule">
+        <div className="container">
+          <div className="schedule-header">
+            <h2>Coaching Schedule</h2>
+            <p>Join our expert-led coaching sessions to excel in your exams. Choose from multiple dates throughout the month.</p>
+          </div>
+          
+          <div className="schedule-grid">
+            <div className="exam-card">
+              <div className="exam-header">
+                <div className="exam-icon">IE</div>
+                <div className="exam-title">
+                  <h3>IELTS</h3>
+                  <div className="exam-subtitle">International English Language Testing</div>
+                </div>
+              </div>
+              <div className="dates-container">
+                <div className="date-badge">
+                  <div className="date">2nd</div>
+                  <div className="time">6:00 PM - 7:30 PM</div>
+                </div>
+                <div className="date-badge">
+                  <div className="date">5th</div>
+                  <div className="time">10:00 PM - 11:30 PM</div>
+                </div>
+                <div className="date-badge">
+                  <div className="date">10th</div>
+                  <div className="time">8:00 AM - 9:30 AM</div>
+                </div>
+                <div className="date-badge">
+                  <div className="date">13th</div>
+                  <div className="time">8:00 PM - 9:30 PM</div>
+                </div>
+                <div className="date-badge">
+                  <div className="date">17th</div>
+                  <div className="time">6:00 PM - 7:30 PM</div>
+                </div>
+                <div className="date-badge">
+                  <div className="date">20th</div>
+                  <div className="time">8:00 PM - 9:30 PM</div>
+                </div>
+                <div className="date-badge">
+                  <div className="date">21st</div>
+                  <div className="time">8:00 AM - 9:30 AM</div>
+                </div>
+              </div>
+            </div>
+
+            <div className="exam-card">
+              <div className="exam-header">
+                <div className="exam-icon">TO</div>
+                <div className="exam-title">
+                  <h3>TOEFL</h3>
+                  <div className="exam-subtitle">Test of English as Foreign Language</div>
+                </div>
+              </div>
+              <div className="dates-container">
+                <div className="date-badge">
+                  <div className="date">4th</div>
+                  <div className="time">7:30 PM - 8:30 PM</div>
+                </div>
+              </div>
+            </div>
+
+            <div className="exam-card">
+              <div className="exam-header">
+                <div className="exam-icon">PE</div>
+                <div className="exam-title">
+                  <h3>Pearson PTE</h3>
+                  <div className="exam-subtitle">Pearson Test of English</div>
+                </div>
+              </div>
+              <div className="dates-container">
+                <div className="date-badge">
+                  <div className="date">9th</div>
+                  <div className="time">10:00 PM - 11:30 PM</div>
+                </div>
+                <div className="date-badge">
+                  <div className="date">19th</div>
+                  <div className="time">6:00 PM - 7:30 PM</div>
+                </div>
+                <div className="date-badge">
+                  <div className="date">24th</div>
+                  <div className="time">8:00 AM - 9:30 AM</div>
+                </div>
+              </div>
+            </div>
+
+            <div className="exam-card">
+              <div className="exam-header">
+                <div className="exam-icon">DU</div>
+                <div className="exam-title">
+                  <h3>Duolingo</h3>
+                  <div className="exam-subtitle">Duolingo English Test</div>
+                </div>
+              </div>
+              <div className="dates-container">
+                <div className="date-badge">
+                  <div className="date">6th</div>
+                  <div className="time">8:00 AM - 9:30 AM</div>
+                </div>
+                <div className="date-badge">
+                  <div className="date">18th</div>
+                  <div className="time">10:00 PM - 11:30 PM</div>
+                </div>
+              </div>
+            </div>
+
+            <div className="exam-card">
+              <div className="exam-header">
+                <div className="exam-icon">SA</div>
+                <div className="exam-title">
+                  <h3>SAT</h3>
+                  <div className="exam-subtitle">Scholastic Assessment Test</div>
+                </div>
+              </div>
+              <div className="dates-container">
+                <div className="date-badge">
+                  <div className="date">6th</div>
+                  <div className="time">6:00 PM - 7:30 PM</div>
+                </div>
+                <div className="date-badge">
+                  <div className="date">17th</div>
+                  <div className="time">8:00 PM - 9:30 PM</div>
+                </div>
+              </div>
+            </div>
+
+            <div className="exam-card">
+              <div className="exam-header">
+                <div className="exam-icon">DE</div>
+                <div className="exam-title">
+                  <h3>German</h3>
+                  <div className="exam-subtitle">German Language Proficiency</div>
+                </div>
+              </div>
+              <div className="dates-container">
+                <div className="date-badge">
+                  <div className="date">2nd</div>
+                  <div className="time">6:30 PM - 8:00 PM</div>
+                  <div className="level">B1 Level</div>
+                </div>
+                <div className="date-badge">
+                  <div className="date">7th</div>
+                  <div className="time">7:00 AM - 8:30 AM</div>
+                  <div className="level">A1 Level</div>
+                </div>
+                <div className="date-badge">
+                  <div className="date">17th</div>
+                  <div className="time">10:00 PM - 11:30 PM</div>
+                  <div className="level">A1 Level</div>
+                </div>
+              </div>
+            </div>
+
+            <div className="exam-card">
+              <div className="exam-header">
+                <div className="exam-icon">FR</div>
+                <div className="exam-title">
+                  <h3>French</h3>
+                  <div className="exam-subtitle">French Language Proficiency</div>
+                </div>
+              </div>
+              <div className="dates-container">
+                <div className="date-badge">
+                  <div className="date">10th</div>
+                  <div className="time">4:30 PM - 6:00 PM</div>
+                  <div className="level">A2 Level</div>
+                </div>
+                <div className="date-badge">
+                  <div className="date">12th</div>
+                  <div className="time">7:30 AM - 9:00 AM</div>
+                  <div className="level">A1 Level</div>
+                </div>
+                <div className="date-badge">
+                  <div className="date">21st</div>
+                  <div className="time">6:30 PM - 8:00 PM</div>
+                  <div className="level">A1 Level</div>
+                </div>
+              </div>
+            </div>
+
+            <div className="exam-card">
+              <div className="exam-header">
+                <div className="exam-icon">GR</div>
+                <div className="exam-title">
+                  <h3>GRE | GMAT</h3>
+                  <div className="exam-subtitle">Graduate Record Exam | Management Test</div>
+                </div>
+              </div>
+              <div className="dates-container">
+                <div className="date-badge">
+                  <div className="date">10th</div>
+                  <div className="time">7:30 AM - 9:00 AM</div>
+                </div>
+                <div className="date-badge">
+                  <div className="date">23rd</div>
+                  <div className="time">8:00 PM - 9:30 PM</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="schedule-cta">
+            <h3>Ready to Start Your Preparation?</h3>
+            <p>Book your coaching session today and get personalized guidance from our expert instructors.</p>
+            <button className="lmbtn">
+              <Link to="/consultationForm" className="cButton">
+                Book Coaching Session
+              </Link>
+            </button>
           </div>
         </div>
       </section>

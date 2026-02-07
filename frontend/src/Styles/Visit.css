@@ -1,0 +1,399 @@
+/* Visit Page Styles */
+.visit-page {
+  overflow-x: hidden;
+}
+
+/* Hero Section */
+.visit-hero {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 100px 0 80px;
+  position: relative;
+}
+
+.visit-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="%23ffffff" opacity="0.1"><polygon points="1000,100 1000,0 0,100"/></svg>');
+  background-size: cover;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #1d4e50;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: #6c757d;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.hero-stats {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-number {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #36948c;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: #6c757d;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.hero-cta {
+  padding: 15px 30px;
+  font-size: 1.1rem;
+}
+
+.visit-stat-label {
+  color: black !important;
+}
+
+.cta-link {
+  color: white;
+  text-decoration: none;
+}
+
+.hero-image {
+  position: relative;
+  margin-top: -40px;
+  margin-left: 30px;
+  z-index: 2;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  aspect-ratio: 9/16;
+}
+
+/* Visit Types Section */
+.visit-types {
+  background: white;
+}
+
+.visit-card {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  height: 100%;
+  border: 1px solid #f0f0f0;
+}
+
+.visit-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.visit-icon {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, #1d4e50, #36948c);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  color: white;
+  font-size: 1.8rem;
+}
+
+.visit-card h3 {
+  color: #1d4e50;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.visit-card p {
+  color: #6c757d;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.visit-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.visit-features li {
+  padding: 0.5rem 0;
+  color: #495057;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.visit-features li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #36948c;
+  font-weight: bold;
+}
+
+/* Destinations Section */
+.destinations {
+  background: #f8f9fa;
+}
+
+.destinations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.destination-item {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.destination-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.destination-flag {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.destination-item h4 {
+  color: #1d4e50;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.destination-item p {
+  color: #6c757d;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.destination-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: #495057;
+}
+
+.destination-info span {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+/* Process Timeline */
+.visit-process-timeline {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  margin-top: 3rem;
+}
+
+.visit-process-timeline::before {
+  content: '';
+  position: absolute;
+  top: 30px;
+  left: 120px;
+  right: 120px;
+  height: 2px;
+  background: linear-gradient(90deg, #1d4e50, #36948c);
+  z-index: 1;
+}
+
+.visit-process-step {
+  flex: 1;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.visit-step-number {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #1d4e50, #36948c);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 auto 1rem;
+  box-shadow: 0 5px 15px rgba(29, 78, 80, 0.3);
+}
+
+.visit-step-content h4 {
+  color: #1d4e50;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.visit-step-content p {
+  color: #6c757d;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Why Choose Us */
+.feature-box {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.visit-feature-icon {
+  font-size: 3rem;
+  color: #36948c;
+  margin-bottom: 1rem;
+}
+
+.feature-box h4 {
+  color: #1d4e50;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.feature-box p {
+  color: #6c757d;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* CTA Section */
+.cta-section {
+  background: linear-gradient(135deg, #1d4e50 0%, #36948c 100%);
+  color: white;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.cta-content h2 {
+  color: white;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.cta-content p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 26px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-outline:hover {
+  background: white;
+  color: #1d4e50;
+}
+
+.outline-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Light background sections */
+.light-bg {
+  background: #f8f9fa;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .hero-stats {
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .visit-process-timeline {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .visit-process-timeline::before {
+    display: none;
+  }
+  
+  .destinations-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .destination-info {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+  
+  .visit-card {
+    padding: 1.5rem;
+  }
+  
+  .destination-item {
+    padding: 1.5rem;
+  }
+}

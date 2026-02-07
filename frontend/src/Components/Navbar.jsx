@@ -15,7 +15,7 @@ export default function Navbar() {
   }
   return (
     <div className="">
-      <nav className="navbar navbar-expand-lg bg-body-tertiary py-lg-4 py-md-3 py-2">
+      <nav className="navbar navbar-expand-lg navbar-custom py-lg-3 py-md-2 py-2">
         <button
           className="navbar-toggler ms-2 px-1 py-0 border-0"
           type="button"
@@ -39,14 +39,14 @@ export default function Navbar() {
           />
         </Link>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav gap-1 gap-md-2 gap-lg-3 mb-2 mb-lg-0">
+          <ul className="navbar-nav gap-1 gap-md-2 gap-lg-3 mb-2 mb-lg-0 mx-auto">
             <li className="nav-item linkss">
               <Link
                 onClick={() => {
                   Page();
                   CloseToggle();
                 }}
-                className="nav-link text-nowrap fs-5 ms-lg-5"
+                className="nav-link text-nowrap fs-5 nav-link-custom"
                 to="/migrate"
               >
                 Migrate
@@ -58,92 +58,73 @@ export default function Navbar() {
                   Page();
                   CloseToggle();
                 }}
-                className="nav-link text-nowrap fs-5 ms-lg-5"
+                className="nav-link text-nowrap fs-5 nav-link-custom"
                 to="/work"
               >
                 Work
               </Link>
             </li>
-            {/* <li className="nav-item dropdown">           // dropdown menu mobile fix
-              <a
-                className="nav-link dropdown-toggle fs-6"   // here is the font sizes of pages 
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Study
-              </a>
-              <ul className="dropdown-menu">
-                <li>
-                  <a className="dropdown-item fs-6" href="#">
-                    ##### 
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item fs-6" href="#">
-                    #####
-                  </a>
-                </li>
-                <li>
-                  <hr className="dropdown-divider" />
-                </li>
-                <li>
-                  <a className="dropdown-item fs-4" href="#">
-                    #####
-                  </a>
-                </li>
-              </ul>
-            </li> */}
-            <li className="nav-item text-nowrap fs-5 ms-lg-5 linkss">
+            <li className="nav-item text-nowrap fs-5 linkss">
               <Link
                 onClick={() => {
                   Page();
                   CloseToggle();
                 }}
-                className="nav-link"
+                className="nav-link nav-link-custom"
                 to="/study"
               >
                 Study
               </Link>
             </li>
-            <li className="nav-item text-nowrap fs-5 ms-lg-5 linkss">
+            <li className="nav-item text-nowrap fs-5 linkss">
               <Link
                 onClick={() => {
                   Page();
                   CloseToggle();
                 }}
-                className="nav-link"
+                className="nav-link nav-link-custom"
                 to="/visa"
               >
                 Visa
               </Link>
             </li>
-            <li className="nav-item text-nowrap fs-5 ms-lg-5 linkss">
+            <li className="nav-item text-nowrap fs-5 linkss">
               <Link
                 onClick={() => {
                   Page();
                   CloseToggle();
                 }}
-                className="nav-link"
+                className="nav-link nav-link-custom"
                 to="/coaching"
               >
                 Coaching
               </Link>
             </li>
+            <li className="nav-item text-nowrap fs-5 linkss">
+              <Link
+                onClick={() => {
+                  Page();
+                  CloseToggle();
+                }}
+                className="nav-link nav-link-custom"
+                to="/about"
+              >
+                About Us
+              </Link>
+            </li>
           </ul>
           <button
-            className="lmbtn text-nowrap mx-2 ms-md-3 mx-lg-5 fs-6 fs-md-5 d-md-inline-block d-none"
-            type="submit" /* Hidden button for phones*/
+            className="lmbtn text-nowrap mx-2 ms-md-3 mx-lg-3 fs-6 fs-md-5 d-md-inline-block d-none"
+            type="submit"
           >
             <Link
               onClick={() => {
                 Page();
                 CloseToggle();
               }}
-              className="nav-link"
+              className="nav-link text-white"
               to="/visit">
-              Read More
+              Read more
             </Link>
           </button>
         </div>

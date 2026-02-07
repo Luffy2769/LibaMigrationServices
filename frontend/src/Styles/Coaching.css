@@ -391,3 +391,219 @@
     font-size: 2rem;
   }
 }
+
+/* COACHING SCHEDULE SECTION */
+.coaching-schedule {
+  background: linear-gradient(135deg, #f8fffe 0%, #e8f4f3 100%);
+  padding: 80px 0;
+}
+
+.schedule-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.schedule-header h2 {
+  color: #1d4e50;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.schedule-header p {
+  color: #666;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.schedule-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.exam-card {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 8px 25px rgba(29, 78, 80, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid transparent;
+}
+
+.exam-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #1d4e50, #36948c);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.exam-card:hover::before {
+  transform: scaleX(1);
+}
+
+.exam-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(29, 78, 80, 0.15);
+  border-color: #36948c;
+}
+
+.exam-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.exam-icon {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #1d4e50, #36948c);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.exam-title {
+  flex: 1;
+}
+
+.exam-title h3 {
+  color: #1d4e50;
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.exam-subtitle {
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 2px;
+}
+
+.dates-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.date-badge {
+  background: linear-gradient(135deg, #e8f4f3, #d4edda);
+  color: #1d4e50;
+  padding: 12px 18px;
+  border-radius: 15px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: 1px solid rgba(54, 148, 140, 0.2);
+  transition: all 0.2s ease;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  min-width: 140px;
+}
+
+.date-badge .date {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 4px;
+  color: #1d4e50;
+}
+
+.date-badge .time {
+  font-size: 0.75rem;
+  color: #666;
+  margin-bottom: 2px;
+}
+
+.date-badge .level {
+  font-size: 0.7rem;
+  color: #36948c;
+  font-weight: 600;
+  background: rgba(54, 148, 140, 0.1);
+  padding: 2px 6px;
+  border-radius: 8px;
+  margin-top: 4px;
+  display: inline-block;
+}
+
+.date-badge::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  transition: left 0.5s;
+}
+
+.date-badge:hover::before {
+  left: 100%;
+}
+
+.date-badge:hover {
+  background: linear-gradient(135deg, #36948c, #1d4e50);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(54, 148, 140, 0.3);
+}
+
+.date-badge:hover .date,
+.date-badge:hover .time,
+.date-badge:hover .level {
+  color: white;
+}
+
+.date-badge:hover .level {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.schedule-cta {
+  text-align: center;
+  margin-top: 50px;
+  padding: 40px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.schedule-cta h3 {
+  color: #1d4e50;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.schedule-cta p {
+  color: #666;
+  margin-bottom: 25px;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .schedule-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .schedule-header h2 {
+    font-size: 2rem;
+  }
+  
+  .exam-card {
+    padding: 25px;
+  }
+  
+  .dates-container {
+    justify-content: center;
+  }
+}

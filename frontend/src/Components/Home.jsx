@@ -48,7 +48,7 @@ export default function Home() {
   return (
     <>
       {/* HERO SECTION */}
-      <section className="hero">
+      <section className="hero fade-in-up">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-7">
@@ -97,25 +97,25 @@ export default function Home() {
                     <h3 className="svt mb-3">Visa Services</h3>
                     <div className="visa-services-grid">
                       <div className="visa-service-item">
-                        <div className="visa-icon">
+                        <div className="home-visa-icon">
                           <FaBriefcase />
                         </div>
                         <span>Study Visa</span>
                       </div>
                       <div className="visa-service-item">
-                        <div className="visa-icon">
+                        <div className="home-visa-icon">
                           <FaGraduationCap />
                         </div>
                         <span>Work Visa</span>
                       </div>
                       <div className="visa-service-item">
-                        <div className="visa-icon">
+                        <div className="home-visa-icon">
                           <FaHome />
                         </div>
                         <span>PR Visa</span>
                       </div>
                       <div className="visa-service-item">
-                        <div className="visa-icon">
+                        <div className="home-visa-icon">
                           <FaHandshake />
                         </div>
                         <span>Business Visa</span>
@@ -166,7 +166,7 @@ export default function Home() {
 
               {/* Cards end here */}
 
-              <button className="primary-btn lmbtn">
+              <button className="primary-btn lmbtn pulse-animation">
                 <Link to="/consultationForm" className="cButton">
                 Get Free Consultation
                 </Link>

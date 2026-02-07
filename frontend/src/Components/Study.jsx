@@ -29,24 +29,24 @@ export default function Study() {
                   <span className="stat-label">Visa Success Rate</span>
                 </div>
               </div>
-              <button className="lmbtn cta-primary">
+              <button className="lmbtn">
                             <Link to="/consultationForm" className="cButton">
                 Get Free Study Consultation
                 </Link>
               </button>
             </div>
             <div className="hero-image">
-              <div className="floating-elements">
-                <div className="floating-card">
-                  <FaGraduationCap className="card-icon" />
+              <div className="study-floating-elements">
+                <div className="study-floating-card">
+                  <FaGraduationCap className="study-card-icon" />
                   <span>Top Universities</span>
                 </div>
-                <div className="floating-card">
-                  <FaGlobe className="card-icon" />
+                <div className="study-floating-card">
+                  <FaGlobe className="study-card-icon" />
                   <span>25+ Countries</span>
                 </div>
-                <div className="floating-card">
-                  <FaBriefcase className="card-icon" />
+                <div className="study-floating-card">
+                  <FaBriefcase className="study-card-icon" />
                   <span>Career Support</span>
                 </div>
               </div>
@@ -354,7 +354,7 @@ export default function Study() {
             <h2>Ready to Begin Your Study Abroad Journey?</h2>
             <p>Join thousands of successful students who have achieved their dreams with our expert guidance.</p>
             <div className="cta-buttons">
-              <button className="lmbtn cta-primary">
+              <button className="lmbtn">
                             <Link to="/consultationForm" className="cButton">
                 Book Free Consultation
                 </Link>

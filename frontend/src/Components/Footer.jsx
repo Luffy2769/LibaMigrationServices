@@ -20,7 +20,7 @@ export default function Footer() {
           <div className="footer-section">
             <div className="footer-logo">
               <img
-                src={process.env.PUBLIC_URL + "/Logo.png"}
+                src={process.env.PUBLIC_URL + "/Logo.png"} 
                 alt="VEA"
                 className="logo-img"
                 height="70px"
