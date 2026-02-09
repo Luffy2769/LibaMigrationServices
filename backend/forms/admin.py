@@ -1,3 +1,6 @@
 from django.contrib import admin
+from .models import FormSubmission, cForm, qForm
 
-# Register your models here.
+admin.site.register(FormSubmission)
+admin.site.register(cForm)
+admin.site.register(qForm)
